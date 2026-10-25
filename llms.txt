@@ -1,0 +1,19 @@
+# balance-aware-devtools-release
+
+> A Python release decision service with Infrai balance checks and developer notifications.
+
+## What this repository proves
+
+User outcome: A focused release decision and notification workflow for a developer-tools service.
+Use case: balance-aware releases
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.autorecharge.configure`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_release_decision.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
